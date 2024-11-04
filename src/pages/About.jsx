@@ -33,7 +33,7 @@ const About = () => {
           {/* Image Section */}
           <div className="w-full md:w-1/2">
             <img 
-              src={`${import.meta.env.VITE_API_URL ||'https://default-url.com'}/assets/img/20220801_size.jpg`}
+              src={`${import.meta.env.VITE_API_URL ||'https://hiba87.netlify.app/'}/assets/img/20220801_size.jpg`}
               alt="About Me" 
               className="rounded-full mx-auto w-60 h-60 object-cover"
             />
