@@ -1,7 +1,7 @@
 // pages/Projects.js
 import React, {useState, useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
-
+import Gallery from '../assets/Gallery.png'
 const Projects = () => {
 // const [projects, setProjects]= useState([])
 const [isLoaded, setIsLoaded] = useState(false);
@@ -41,7 +41,7 @@ const [isLoaded, setIsLoaded] = useState(false);
       {
         title: "The Image Gallery",
         description: "A beautiful image gallery.",
-        imageUrl: `../assets/Gallery.png`,
+        imageUrl: Gallery,
         link: "https://alaani-image-gallery.netlify.app/",
       },
   
