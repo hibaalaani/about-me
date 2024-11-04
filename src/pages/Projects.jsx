@@ -24,7 +24,7 @@ const [isLoaded, setIsLoaded] = useState(false);
 
 
 // },[])
-
+console.log(import.meta.env.VITE_API_URL)
   const projects = [
     {
       title: 'Candy Color',
