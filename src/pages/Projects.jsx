@@ -29,32 +29,32 @@ const [isLoaded, setIsLoaded] = useState(false);
     {
       title: 'Candy Color',
       description: 'A brief description of Project One.',
-      imageUrl: `../assets/img/Candy.png`,
+      imageUrl: `../assets/Candy.png`,
       link: "https://alaani-candy-color.netlify.app/",
     },
     {
         title: "Color Game",
         description: "A beautiful image gallery.",
-        imageUrl: `../assets/img/gameColor.png`,
+        imageUrl: `../assets/gameColor.png`,
         link: "https://color-game-guess.netlify.app/",
       },
       {
         title: "The Image Gallery",
         description: "A beautiful image gallery.",
-        imageUrl: `../assets/img/Gallery.png`,
+        imageUrl: `../assets/Gallery.png`,
         link: "https://alaani-image-gallery.netlify.app/",
       },
   
     {
       title: 'Tgif',
       description: 'A brief description of Project Two.',
-      imageUrl: `../assets/img/Tgif.png`,
+      imageUrl: `../assets/Tgif.png`,
       link: "https://alaani-tgif.netlify.app/",
     },
     {
         title: "More Info , if you like more automation with Python",
         description: "Double Check my GITHUB",
-        imageUrl: `../assets/img/download.jpg`,
+        imageUrl: `../assets/download.jpg`,
         link: "https://github.com/hibaalaani",
       },
   ];
