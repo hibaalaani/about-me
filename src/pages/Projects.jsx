@@ -41,7 +41,7 @@ const [isLoaded, setIsLoaded] = useState(false);
       {
         title: "The Image Gallery",
         description: "A beautiful image gallery.",
-        imageUrl: `${import.meta.env.VITE_API_URL}/assets/img/Gallery.png`,
+        imageUrl: `https://hiba87.netlify.app/assets/img/Gallery.png`,
         link: "https://alaani-image-gallery.netlify.app/",
       },
   
