@@ -1,12 +1,12 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
-import { useAuth } from "../contexts/AuthContext";
+// import { useAuth } from "../contexts/AuthContext";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { isAuthenticated, logout } = useAuth();
+  // const { isAuthenticated, logout } = useAuth();
   
   const isLandingPage = location.pathname === "/";
 
@@ -33,7 +33,7 @@ const Navbar = () => {
           </RouterLink>
         </li>
 
-        {isAuthenticated ? (
+        {/* {isAuthenticated ? (
           <>
             <li>
               <RouterLink to="/dashboard" className="text-white hover:text-blue-400 transition-colors">
@@ -62,8 +62,8 @@ const Navbar = () => {
                   Sessions
                 </RouterLink>
               </li>
-            )}
-            <li>
+            )} */}
+            {/* <li>
               <button onClick={handleLogout} className="text-white hover:text-blue-400 transition-colors">
                 Logout
               </button>
@@ -82,7 +82,7 @@ const Navbar = () => {
               </RouterLink>
             </li>
           </>
-        )}
+        )} */}
 
         <li>
           <RouterLink to="about" className="text-white hover:text-blue-400 transition-colors">
