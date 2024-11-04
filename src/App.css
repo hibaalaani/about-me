@@ -1,0 +1,78 @@
+.about-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.text-writer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    white-space: wrap;
+    width: 100%;
+    /* Adjust for responsive width */
+    border-right: 3px solid;
+    /* Cursor effect */
+    animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(71, 59, 50);
+    }
+}
+
+
+/* Style for the paragraph after typing */
+
+.about-paragraph {
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+
+@keyframes gradientMovement {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animated-background {
+    background: linear-gradient(45deg, #685bf0, #4079f1, #695cff, #685bf0);
+    background-size: 200% 200%;
+    animation: gradientMovement 20s ease infinite;
+  }
+  
+
+.animated-background-session{
+    background: linear-gradient(65deg, #3b83f6, #4568d8, #5eb1cf, #3b82f6);
+    background-size: 200% 200%;
+    animation: gradientMovement 30s ease infinite;
+}
