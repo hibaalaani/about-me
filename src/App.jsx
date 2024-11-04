@@ -23,7 +23,7 @@ import LandingPage from "./pages/LandingPage.jsx";
 function App() {
   return (
     // <AuthProvider>
-      <Router basename="/alaani">
+      <Router basename="/">
         {/* <div className="App"> */}
         <Navbar />
         <div style={{paddingTop: "80px"}}>
