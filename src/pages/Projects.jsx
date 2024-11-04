@@ -24,18 +24,18 @@ const [isLoaded, setIsLoaded] = useState(false);
 
 
 // },[])
-console.log(import.meta.env.VITE_API_URL)
+
   const projects = [
     {
       title: 'Candy Color',
       description: 'A brief description of Project One.',
-      imageUrl: `assets/img/Candy.png`,
+      imageUrl: `${import.meta.env.VITE_API_URL}/assets/img/Candy.png`,
       link: "https://alaani-candy-color.netlify.app/",
     },
     {
         title: "Color Game",
         description: "A beautiful image gallery.",
-        imageUrl: `assets/img/gameColor.png`,
+        imageUrl: `${import.meta.env.VITE_API_URL}/assets/img/gameColor.png`,
         link: "https://color-game-guess.netlify.app/",
       },
       {
