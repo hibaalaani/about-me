@@ -10,35 +10,37 @@ const LandingPage = () => {
   return (
     <div className="bg-gray-100">
 
-      {/* Hero Section */}
-      <section className="flex items-center justify-between min-h-screen bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-10 shadow-lg">
+<section className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-8 lg:p-16">
         {/* Left Column */}
         <div className="flex-1 flex justify-center p-5">
           <img 
             src={HeroImage} 
             alt="Portfolio Illustration" 
-            className="w-full h-auto max-w-md rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            className="w-full h-auto max-w-xs lg:max-w-md rounded-lg shadow-lg transition-transform transform hover:scale-105"
           />
         </div>
 
         {/* Right Column */}
-        <div className="flex-1 text-left space-y-5 p-5">
-          <h1 className="text-5xl font-bold leading-tight">
+        <div className="flex-1 text-left space-y-5 p-5 lg:mt-0 mt-8 text-center lg:text-left">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Hi, I'm Hiba Alaani
           </h1>
-          <p className="text-xl font-medium">
+          <p className="text-lg md:text-xl font-medium">
             A passionate Web Developer & Designer who brings creativity to code.
           </p>
-          <p className="text-lg">
+          <p className="text-base md:text-lg">
             I specialize in React, Node, Django, and modern web design principles. Check out my work and get in touch!
           </p>
-          <button className="bg-blue-500 hover:bg-blue-700 transition-all duration-200 text-white font-semibold py-3 px-8 rounded-lg shadow-lg">
-            <Link to="contact" smooth={true} duration={500}>
-              Contact Me
-            </Link>
-          </button>
+          <div className="flex justify-center lg:justify-start">
+            <button className="bg-blue-500 hover:bg-blue-700 transition-all duration-200 text-white font-semibold py-3 px-8 rounded-lg shadow-lg">
+              <Link to="contact" smooth={true} duration={500}>
+                Contact Me
+              </Link>
+            </button>
+          </div>
         </div>
       </section>
+
 
       {/* About Section */}
       <Element name="about">

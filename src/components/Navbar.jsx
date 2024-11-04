@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
 // import { useAuth } from "../contexts/AuthContext";
@@ -6,6 +6,7 @@ import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [isNavOpen, setIsNavOpen] = useState(false);
   // const { isAuthenticated, logout } = useAuth();
   
   const isLandingPage = location.pathname === "/";
@@ -21,6 +22,21 @@ const Navbar = () => {
       <div className="text-2xl font-bold text-white">
         <RouterLink to="/">My Portfolio</RouterLink>
       </div>
+      <div className="md:hidden">
+          <button
+            onClick={() => setIsNavOpen(!isNavOpen)}
+            className="text-white focus:outline-none"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+          <div className={`lg:flex space-x-4 ${isNavOpen ? "block" : "hidden"} lg:block`}>
+          <ScrollLink to="about" smooth={true} duration={500} className="hover:text-gray-300 block lg:inline">About</ScrollLink>
+          <ScrollLink to="portfolio" smooth={true} duration={500} className="hover:text-gray-300 block lg:inline">Projects</ScrollLink>
+          <ScrollLink to="contact" smooth={true} duration={500} className="hover:text-gray-300 block lg:inline">Contact</ScrollLink>
+        </div>
+        </div>
       <ul className="flex space-x-6">
         <li>
           <RouterLink to="projects" className="text-white hover:text-blue-400 transition-colors">
