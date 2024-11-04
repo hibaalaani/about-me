@@ -45,7 +45,7 @@ const LandingPage = () => {
       {/* About Section */}
       <Element name="about">
         <section className="py-20 bg-white">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">About Me</h2>
+         
           <About />
         </section>
       </Element>
@@ -53,7 +53,7 @@ const LandingPage = () => {
       {/* Portfolio Projects Section */}
       <Element name="portfolio">
         <section className="py-20 bg-gray-50">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">My Projects</h2>
+         
           <div className="flex flex-wrap justify-center gap-8">
             <Projects />
           </div>
@@ -63,7 +63,7 @@ const LandingPage = () => {
       {/* Contact Section */}
       <Element name="contact">
         <section className="py-20 bg-gray-100">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">Contact Me</h2>
+         
           <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-8">
             <Contact />
           </div>
