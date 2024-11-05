@@ -2,6 +2,10 @@
 import React, {useState, useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import Gallery from '../assets/Gallery.png'
+import Candy from '../assets/Candy.png';
+import ColorGame from '../assets/ColorGame.png';
+import Tgif from '../assets/Tgif.png';
+import GitHub from '../assets/GitHub.png';
 const Projects = () => {
 // const [projects, setProjects]= useState([])
 const [isLoaded, setIsLoaded] = useState(false);
@@ -29,13 +33,13 @@ const [isLoaded, setIsLoaded] = useState(false);
     {
       title: 'Candy Color',
       description: 'A brief description of Project One.',
-      imageUrl: `../assets/Candy.png`,
+      imageUrl: Candy,
       link: "https://alaani-candy-color.netlify.app/",
     },
     {
         title: "Color Game",
         description: "A beautiful image gallery.",
-        imageUrl: `../assets/gameColor.png`,
+        imageUrl:ColorGame,
         link: "https://color-game-guess.netlify.app/",
       },
       {
@@ -48,13 +52,13 @@ const [isLoaded, setIsLoaded] = useState(false);
     {
       title: 'Tgif',
       description: 'A brief description of Project Two.',
-      imageUrl: `../assets/Tgif.png`,
+      imageUrl: Tgif,
       link: "https://alaani-tgif.netlify.app/",
     },
     {
         title: "More Info , if you like more automation with Python",
         description: "Double Check my GITHUB",
-        imageUrl: `../assets/download.jpg`,
+        imageUrl:GitHub,
         link: "https://github.com/hibaalaani",
       },
   ];
