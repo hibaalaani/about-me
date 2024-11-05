@@ -1,5 +1,5 @@
 import React , {useState, useEffect} from 'react';
-
+import ME from '../assets/20220801_size.jpg'
 const About = () => {
 
   const [text, setText] = useState("");
@@ -33,7 +33,7 @@ const About = () => {
           {/* Image Section */}
           <div className="w-full md:w-1/2">
             <img 
-              src={`${import.meta.env.VITE_API_URL}/assets/img/20220801_size.jpg`}
+              src={ME}
               alt="About Me" 
               className="rounded-full mx-auto w-60 h-60 object-cover"
             />

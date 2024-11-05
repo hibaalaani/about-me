@@ -3,9 +3,9 @@ import React, {useState, useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import Gallery from '../assets/Gallery.png'
 import Candy from '../assets/Candy.png';
-import ColorGame from '../assets/ColorGame.png';
+import ColorGame from '../assets/gameColor.png';
 import Tgif from '../assets/Tgif.png';
-import GitHub from '../assets/GitHub.png';
+import GitHub from '../assets/download.jpg';
 const Projects = () => {
 // const [projects, setProjects]= useState([])
 const [isLoaded, setIsLoaded] = useState(false);
